@@ -52,7 +52,7 @@ const validEl = () => {
     <div class="card">
           <div class="card-details padding-block-7 padding-inline-7">
             <img
-              src="../assets/images/icon-success.svg"
+              src="./assets/images/icon-success.svg"
               alt="icon-success"
               class="padding-block-end-9" />
             <h2 class="heading-2">Thanks for subscribing!</h2>
