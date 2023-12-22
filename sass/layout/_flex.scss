@@ -1,0 +1,17 @@
+@use "../abstracts/" as *;
+.base-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: $size-4;
+  @include mq(md) {
+    flex-wrap: nowrap;
+  }
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

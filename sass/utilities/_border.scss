@@ -1,0 +1,30 @@
+@use "../abstracts/" as *;
+.radius-full {
+  border-radius: 1000px;
+  background-color: var(--neutral-dark-blue);
+  width: 40px;
+  height: 40px;
+}
+
+.radius-extra-large {
+  border-radius: 28px;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.radius-large {
+  border-radius: 16px;
+}
+
+.radius-medium {
+  border-radius: 12px;
+}
+
+.radius-small {
+  border-radius: 8px;
+}
+
+.radius-extra-small {
+  border-radius: 4px;
+}

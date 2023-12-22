@@ -1,0 +1,105 @@
+@use "./base";
+@use "./components";
+@use "./layout";
+@use "./utilities";
+@use "./abstracts/" as *;
+
+main {
+  @include mq(lg) {
+    width: calc(100% - 32%); //     width: 52%;
+  }
+  position: relative;
+  .card {
+    display: block;
+    @include mq(lg) {
+      display: flex;
+      padding: $size-5;
+      gap: 3rem;
+      .card-details {
+        width: calc(100% - 48%);
+        padding-block: 4.6rem;
+      }
+    }
+  }
+  .successEl {
+    position: absolute;
+    top: 0;
+    @include mq(lg) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .card {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      .card-details {
+        @include mq(lg) {
+          width: 100%;
+        }
+      }
+      form {
+        position: absolute;
+        bottom: 0;
+        width: 315px;
+      }
+      @include mq(lg) {
+        width: 500px;
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        form {
+          position: relative;
+        }
+      }
+    }
+  }
+  .card-img {
+    background-image: url("../assets/images/illustration-sign-up-mobile.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // width: 375px; // 375 × 284 px
+    height: 284px;
+    @include mq(lg) {
+      background-image: url("../assets/images/illustration-sign-up-desktop.svg");
+      width: 400px; // 400 × 593 px
+      height: 593px;
+      order: 1;
+      flex: 1;
+      border-radius: 28px;
+      // margin-inline: $size-5;
+    }
+  }
+  p,
+  span {
+    position: relative;
+    color: var(--neutral-dark-slate-grey);
+    font-weight: 400;
+  }
+  span {
+    display: flex;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../assets/images/icon-list.svg");
+      background-repeat: no-repeat;
+      width: 21px;
+      height: 21px;
+      display: flex;
+      left: 0;
+    }
+  }
+  .error input[type="text"] {
+    border-color: var(--primary-tomato);
+    background-color: rgb(255 98 87 / 20%);
+  }
+  small {
+    font-weight: 700;
+  }
+  .success input {
+    border-color: #bbb;
+  }
+}

@@ -1,0 +1,45 @@
+/*------------------RESET--------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  object-fit: none;
+}
+
+img,
+picture,
+svg,
+button {
+  display: block;
+}
+
+button,
+input,
+span {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  outline: none;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

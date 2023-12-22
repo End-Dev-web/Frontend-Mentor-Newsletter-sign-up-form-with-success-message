@@ -1,0 +1,18 @@
+@use "../abstracts/" as *;
+@use "./font-face" as *;
+/*------------------GENERAL--------------------*/
+
+body {
+  font-family: $font-family-base;
+  min-height: 100vh;
+  overflow-x: hidden;
+  @include mq(md) {
+    background-color: var(--neutral-dark-slate-grey);
+    display: flex;
+    justify-content: center;
+  }
+}
+
+* {
+  font-family: "Roboto";
+}

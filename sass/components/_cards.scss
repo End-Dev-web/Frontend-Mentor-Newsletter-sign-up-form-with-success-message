@@ -1,0 +1,8 @@
+@use "../abstracts/" as *;
+
+.card {
+  background-color: var(--neutral-white);
+  @include mq(md) {
+    border-radius: 28px;
+  }
+}

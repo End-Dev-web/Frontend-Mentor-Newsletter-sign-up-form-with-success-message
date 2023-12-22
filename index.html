@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <main>
+      <div class="conteiner">
+        <div class="card" data-submit>
+          <div class="card-img"></div>
+          <div class="card-details padding-block-7 padding-inline-7">
+            <h2 class="heading-2">Stay updated!</h2>
+            <p class="padding-block-5">
+              Join 60,000+ product managers receiving monthly updates on:
+            </p>
+            <span class="padding-inline-9 padding-block-2"
+              >Product discovery and building what matters</span
+            >
+            <span class="padding-inline-9 padding-block-2"
+              >Measuring to ensure updates are a success</span
+            >
+            <span class="padding-inline-9 padding-block-2">And much more!</span>
+            <form action="#" class="padding-block-start-7" data-form>
+              <div class="form-field">
+                <div class="base-flex">
+                  <label for="email">Email address</label>
+                  <small class="clr-primary-tomato"></small>
+                </div>
+                <input
+                  type="text"
+                  placeholder="email@company.com"
+                  name="email"
+                  id="email"
+                  autocomplete="off"
+                  data-email
+                  class="margin-block-start-3" />
+              </div>
+              <input type="submit" value="Subscribe to monthly newsletter" />
+            </form>
+          </div>
+        </div>
+        <!-- Success message start -->
+        <div class="successEl" data-success></div>
+
+        <!-- Success message end -->
+      </div>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
