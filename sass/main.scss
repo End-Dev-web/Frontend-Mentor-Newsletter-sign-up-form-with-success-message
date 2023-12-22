@@ -6,6 +6,9 @@
 
 main {
   @include mq(lg) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: calc(100% - 32%); //     width: 52%;
   }
   position: relative;
